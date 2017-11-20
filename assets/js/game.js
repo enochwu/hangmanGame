@@ -85,10 +85,10 @@ console.log(guesses)
 				window.alert('Game over!')
 				window.location.reload();
 		}
+
 		//convert array to comma separated string
 		rawRightText = underScore.toString()
 		rawWrongText = incorrect.toString()
-
 		//take the variable with string, and replace commas with spaces, clean up
 		prettyRightText = rawRightText.replace(/,/g, " ")
 		prettyWrongText = rawWrongText.replace(/,/g, ", ")
@@ -97,10 +97,9 @@ console.log(guesses)
 		prettyWrongText = prettyWrongText.toUpperCase();
 
     document.getElementById("wordToSolve").innerHTML= prettyRightText;
-    noUnderScore = prettyRightText.indexOf('_');
     document.getElementById("guessCounter").innerHTML= guesses;
     document.getElementById("wrongKeys").innerHTML= prettyWrongText;
-
+    noUnderScore = prettyRightText.indexOf('_');
 		console.log(prettyRightText)
 		console.log(prettyWrongText)
     console.log(noUnderScore)

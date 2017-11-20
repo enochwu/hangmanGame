@@ -1,9 +1,37 @@
 body {
-	background-color: #666;
+	background-color: #white;
+}
+
+h1{
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
 }
 
 #layGuide {
 	background-color: white;
-	border: solid red 4px;
 	text-align: center;
+	opacity: .4;
+
+}
+
+h4 {
+	color: black;
+	opacity: 1.0;
+}
+
+span {
+	color: black;
+	opacity: 1.0;
+}
+
+li {
+	list-style-type: none;
+}
+
+#wordToSolve {
+	font-weight: bold;
+	font-size: 25px;
 }
